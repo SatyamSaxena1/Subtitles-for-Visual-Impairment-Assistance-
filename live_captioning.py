@@ -356,6 +356,16 @@ def save_config(cfg: dict):
 def main():
     global model, app, window
     # model load (deferred) with GPU preferred and CPU fallback
+  # Ensure a QApplication exists before showing any dialogs
+    try:
+        from PyQt5.QtWidgets import QApplication as _QApp
+        if _QApp.instance() is None:
+            app = _QApp(sys.argv)
+        else:
+            app = _QApp.instance()
+    except Exception:
+        app = None
+  
     # model path handling: prefer MODEL_PATH env var, then models/whisper/<model-dir> if present
     model_path = os.environ.get('MODEL_PATH')
     if not model_path:
