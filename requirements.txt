@@ -1,0 +1,5 @@
+faster_whisper==1.2.0
+sounddevice
+numpy
+PyQt5
+# torch should be installed separately to match your CUDA version; see https://pytorch.org
