@@ -50,7 +50,7 @@ The script will try to auto-detect the VBCABLE device name. If it cannot find i
 
 ## Packaging and distribution
 
-- For non-technical users, consider packaging the app with PyInstaller into a single `exe`. Note: bundling a GPU-enabled model and the correct `torch` build increases complexity; you may want to provide clear instructions instead of a full bundled GPU build.
+- For non-technical users, considering packaging the app with PyInstaller into a single `exe`. Note: bundling a GPU-enabled model and the correct `torch` build increases complexity; you may want to provide clear instructions instead of a full bundled GPU build. Any ideas of alternatives are welcome
 
 ## License & credits
 
@@ -86,4 +86,5 @@ Run in PowerShell (as user):
 ## Environment checker
 
 Run `check_env.py` to verify your Python, packages, and VB-CABLE installation. The script prints a checklist and detects several common errors (missing torch, incompatible CUDA, missing sounddevice backend). If an error is detected the script reports a helpful message and offers a link to open a GitHub issue.
+
 
