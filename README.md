@@ -1,4 +1,4 @@
-# Live Captioning (VBCABLE + Whisper)
+# Live Captioning (VB CABLE + Whisper)
 
 Lightweight local live-captioning for Windows. Capture system audio routed through VBCABLE and transcribe locally with a Whisper model (via faster_whisper). The app shows an always-on-top caption window suitable for deaf users.
 
